@@ -1,5 +1,9 @@
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: hsl(210, 46%, 95%);
+    width: 100%;
 
 }
 .app{
@@ -11,6 +15,9 @@ body{
     grid-template-areas: "item1 item1 item2 item3"
                          "item4 item5 item5 item3";
     color: white;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 15% auto;
 }
 
 .item{
@@ -74,4 +81,15 @@ body{
 
 .comment{
     color: hsl(0, 0%, 81%)
+}
+
+@media only screen and (max-width: 500px) {
+    .app{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        max-width: none;
+        min-width: none;
+    }
 }

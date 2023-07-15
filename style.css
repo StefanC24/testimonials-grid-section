@@ -14,7 +14,9 @@ body{
         "item4 item5 item5 item3";
     color: hsl(210, 46%, 95%);
     min-width: 500px;
-    max-width: 650px;
+    max-width: 950px;
+    /* min-height: fit-content; */
+    min-height: 500px;
     margin: 7% auto;
 }
 
@@ -75,13 +77,13 @@ body{
 
 .name{
     margin: 0;
-    font-size: 8px;
+    font-size: 13px;
     color: hsl(0, 0%, 81%);
 }
 
 
 .status{
-    font-size: 6px;
+    font-size: 10px;
     color: hsl(0, 0%, 81%);
     opacity: 50%;
     margin: 0;
@@ -89,12 +91,20 @@ body{
 
 
 .feedback{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .comment{
-    font-size: 8px;
-    color: hsl(0, 0%, 81%)
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+
+.item5 p{
+    color: hsl(217, 19%, 35%);
+}
+.item3 p{
+    color: hsl(217, 19%, 35%);
 }
 
 .light_card{
@@ -108,5 +118,10 @@ body{
         margin: 0;
         justify-content: center;
         min-width: 100%;
+    }
+
+    .item{
+        margin: 0 15px;
+        padding: 30px;
     }
 }
